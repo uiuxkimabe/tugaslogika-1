@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Logika JS - 1 Dea Afrizal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="date" class="plus"></div>
+      <div id="date" class="minus"></div>
+      <div class="container">
+        <h2>Tugas Kecil - Latihan Logika</h2>
+        <h2>Aplikasi Input Saldo</h2>
+
+        <button type="button" onclick="inputPrompt()">Mulai Input</button>
+
+        <form>
+          <label for="name">Nama</label>
+          <input id="userName" type="text" name="name" disabled />
+          <label for="saldoawal">Saldo Awal</label>
+          <input id="begBalance" type="number" name="saldoawal" disabled />
+          <div class="btn">
+            <button type="button" onclick="tambahSaldo()">
+              Tambah Saldo ↑
+            </button>
+            <button type="button" onclick="kurangSaldo()">
+              Kurangi Saldo ↓
+            </button>
+          </div>
+          <label for="saldoakhir">Saldo Akhir</label>
+          <input id="endBalance" type="number" name="saldoakhir" disabled />
+        </form>
+      </div>
+    </main>
+
+    <!-- vanilla js -->
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  padding: 1em 2em;
+  border: none;
+  background-color: #1613c5;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#date {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.plus {
+  top: 0;
+  left: 0;
+  background-color: #96f1a3;
+  color: #177e0a;
+  transform: translateY(-100%);
+}
+
+.minus {
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #f19696;
+  color: #7e0a0a;
+  transform: translateY(100%);
+}
+
+.plus.active {
+  transform: translateY(0);
+}
+
+.minus.active {
+  transform: translateY(0);
+}
+
+.container {
+  max-width: 350px;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+ul {
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin: 10px 0;
+  padding: 1em;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.btn button {
+  width: 100%;
+}
+
+.btn button:first-child {
+  background-color: #177e0a;
+}
+
+.btn button:last-child {
+  background-color: #c71010;
+}
