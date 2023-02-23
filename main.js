@@ -113,10 +113,13 @@ switch (pickMonth) {
 let resultDate = `${pickDay}, ${pickDate} ${pickMonth} ${pickYear}`;
 console.info(resultDate);
 
+// Menggunakan OOP class Input User
 class InputUser {
   nama;
   saldoAwal;
   saldoAkhir = this.saldoAwal;
+  
+//   Method untuk input nama dan saldo awal
   promptUser() {
     this.nama = prompt("Masukkan Nama User");
     let begBalance = Number(prompt("Masukkan Nominal Saldo Awal"));
@@ -124,6 +127,8 @@ class InputUser {
     this.saldoAkhir = this.saldoAwal;
     return user.saldoAkhir;
   }
+  
+//   Method untuk input tambah saldo
   addBalance() {
     this.saldoAkhir;
     let tambahSaldo = Number(prompt("Tambahkan Saldo"));
@@ -144,6 +149,8 @@ class InputUser {
     }, 4000);
     return this.saldoAkhir;
   }
+  
+//   Method untuk mengurangi saldo
   creditBalance() {
     this.saldoAkhir;
     let kurangSaldo = Number(prompt("Kurangi Saldo"));
@@ -166,10 +173,14 @@ class InputUser {
   }
 }
 
+// Seleksi Form Yang Akan di Input Valuenya
 let nameValue = document.getElementById("userName");
 let balance = document.getElementById("begBalance");
 let ending = document.getElementById("endBalance");
+
+// Instance Object (Ambil Data, Method dari OOP Class InputUser)
 const user = new InputUser();
+// Input Name dan Saldo Awal
 function inputPrompt() {
   user.promptUser();
   nameValue.value = user.nama;
@@ -177,10 +188,12 @@ function inputPrompt() {
   ending.value = user.saldoAkhir;
 }
 
+// Input Tambah Saldo
 function tambahSaldo() {
   ending.value = user.addBalance();
 }
 
+// Input Kurangi Saldo
 function kurangSaldo() {
   ending.value = user.creditBalance();
 }
