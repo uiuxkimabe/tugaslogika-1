@@ -33,29 +33,25 @@ let pickYear = new Date().getFullYear();
 // Pengkondisian Hari Dengan Menyesuaikan Nomor Indexnya
 switch (pickDay) {
   case 0:
-    days[0];
+    pickDay = days[0];
     break;
   case 1:
-    days[1];
+    pickDay = days[1];
     break;
   case 2:
-    days[2];
+    pickDay = days[2];
     break;
   case 3:
-    days[3];
-    console.info(days[3]);
+    pickDay = days[3];
     break;
   case 4:
-    days[4];
-    console.info(days[4]);
+    pickDay = days[4];
     break;
   case 5:
-    days[5];
-    console.info(days[5]);
+    pickDay = days[5];
     break;
   case 6:
-    days[5];
-    console.info(days[6]);
+    pickDay = days[5];
     break;
 
   default:
@@ -66,43 +62,39 @@ switch (pickDay) {
 switch (pickMonth) {
   case 0:
     pickMonth = months[0];
-    console.info(months[0]);
     break;
   case 1:
     pickMonth = months[1];
-    console.info(months[1]);
     break;
   case 2:
     pickMonth = months[2];
-    console.info(months[2]);
     break;
   case 3:
     pickMonth = months[3];
-    console.info(months[3]);
     break;
   case 4:
-    months[4];
+    pickMonth = months[4];
     break;
   case 5:
-    months[5];
+    pickMonth = months[5];
     break;
   case 6:
-    months[6];
+    pickMonth = months[6];
     break;
   case 7:
-    months[7];
+    pickMonth = months[7];
     break;
   case 8:
-    months[8];
+    pickMonth = months[8];
     break;
   case 9:
-    months[9];
+    pickMonth = months[9];
     break;
   case 10:
-    months[10];
+    pickMonth = months[10];
     break;
   case 11:
-    months[11];
+    pickMonth = months[11];
     break;
 
   default:
