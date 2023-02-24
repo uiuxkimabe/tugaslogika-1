@@ -34,24 +34,31 @@ let pickYear = new Date().getFullYear();
 switch (pickDay) {
   case 0:
     pickDay = days[0];
+    console.info(pickDay);
     break;
   case 1:
     pickDay = days[1];
+    console.info(pickDay);
     break;
   case 2:
     pickDay = days[2];
+    console.info(pickDay);
     break;
   case 3:
     pickDay = days[3];
+    console.info(pickDay);
     break;
   case 4:
     pickDay = days[4];
+    console.info(pickDay);
     break;
   case 5:
     pickDay = days[5];
+    console.info(pickDay);
     break;
   case 6:
     pickDay = days[5];
+    console.info(pickDay);
     break;
 
   default:
