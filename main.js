@@ -124,7 +124,7 @@ class InputUser {
     let begBalance = Number(prompt("Masukkan Nominal Saldo Awal"));
     this.saldoAwal = begBalance;
     this.saldoAkhir = this.saldoAwal;
-    return user.saldoAkhir;
+    return this.saldoAkhir;
   }
   
 //   Method untuk input tambah saldo
